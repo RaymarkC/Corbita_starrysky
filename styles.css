@@ -1,0 +1,206 @@
+body{
+    background-image: url('raw.jpg');
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+.text {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 9999;
+
+  font-family: 'Press Start 2P', monospace;
+  font-size: 30px; 
+  color: white;
+
+  padding: 16px 32px;
+  border-radius: 8px;
+}
+
+.blackhole {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.planet {
+    position: absolute;
+    top: 30%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    animation: planet-horizontal 8s linear infinite;
+    z-index: 2;
+}
+
+@keyframes planet-horizontal {
+    0% {
+        left: 20%;
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    50% {
+        left: 70%;
+        transform: translate(-50%, -50%) rotate(180deg);
+    }
+    100% {
+        left: 20%;
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+
+.eart {
+    position: absolute;
+    top: 20%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+    animation: eart-horizontal 8s linear infinite;
+    z-index: 2;
+}
+
+@keyframes eart-horizontal {
+    0% {
+        left: 70%;
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    50% {
+        left: 20%;
+        transform: translate(-50%, -50%) rotate(180deg);
+    }
+    100% {
+        left: 70%;
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+
+.planit{
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    transform: matrix(1, -0.3, 0, 1, 0, 0);
+    animation: planit-travel 8s linear infinite;
+    z-index: 2;
+}
+@keyframes planit-travel {
+    0% {
+        top: 0%;
+        left: 10%;
+        transform: translate(-10%, -50%) rotate(0deg);
+    }
+    50% {
+        top: 100%;
+        left: 80%;
+        transform: translate(-40%, -30%) rotate(180deg);
+    }
+    100% {
+        top: 0%;
+        left: 10%;
+        transform: translate(-40%, -30%) rotate(360deg);
+    }
+}
+.asteroyd {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100px;
+    height: 100px;
+    transform: translate(-50%, -50%);
+    animation: asteroyd-circular 8s linear infinite;
+    z-index: 2;
+}
+
+@keyframes asteroyd-circular {
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg) translateX(120px) rotate(0deg);
+    }
+    100% {
+        transform: translate(-50%, -50%) rotate(360deg) translateX(120px) rotate(-360deg);
+    }
+}
+
+.elyen {
+    position: absolute;
+    bottom: 10%;
+    left: 70%;
+    transform: translate(-50%, 0%);
+    animation: elyen-horizontal 8s linear infinite;
+    z-index: 2;
+}
+
+@keyframes elyen-horizontal {
+    0% {
+        left: 70%;
+        transform: translate(-50%, 0%) rotate(0deg);
+    }
+    50% {
+        left: 20%;
+        transform: translate(-50%, 0%) rotate(180deg);
+    }
+    100% {
+        left: 70%;
+        transform: translate(-50%, 0%) rotate(360deg);
+    }
+}
+
+.istar {
+    position: absolute;
+    bottom: 0%;
+    left: 70%;
+    transform: translate(-50%, 0%);
+    animation: istar-horizontal 8s linear infinite;
+    z-index: 2;
+}
+
+@keyframes istar-horizontal {
+    0% {
+        left: 70%;
+        transform: translate(-50%, 0%) rotate(0deg);
+    }
+    50% {
+        left: 20%;
+        transform: translate(-50%, 0%) rotate(180deg);
+    }
+    100% {
+        left: 70%;
+        transform: translate(-50%, 0%) rotate(360deg);
+    }
+}
+.spaceship {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 120px;
+    height: 120px;
+    transform: translate(-50%, -50%);
+    animation: spaceship-travel 12s linear infinite;
+    z-index: 10;
+}
+
+@keyframes spaceship-travel {
+    0% {
+        top: 5%;
+        left: 5%;
+        transform: translate(-50%, -50%);
+    }
+    25% {
+        top: 5%;
+        left: 95%;
+        transform: translate(-50%, -50%);
+    }
+    50% {
+        top: 95%;
+        left: 95%;
+        transform: translate(-50%, -50%);
+    }
+    75% {
+        top: 95%;
+        left: 5%;
+        transform: translate(-50%, -50%);
+    }
+    100% {
+        top: 5%;
+        left: 5%;
+        transform: translate(-50%, -50%);
+    }
+}
